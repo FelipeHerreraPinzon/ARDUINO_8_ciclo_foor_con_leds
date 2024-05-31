@@ -1,0 +1,45 @@
+int verdePIN = 13;
+int rojoPIN = 12;
+int dt = 500;
+int rojo = 5;
+int verde = 3;
+int i;
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+ pinMode(verdePIN, OUTPUT);
+ pinMode(rojoPIN, OUTPUT);
+ 
+}
+
+void loop() {
+
+  for(i=0; i <= verde; i++){
+       digitalWrite(verdePIN, HIGH);
+   delay(dt);
+   digitalWrite(verdePIN, LOW);
+   delay(dt);
+  }
+
+
+  // put your main code here, to run repeatedly:
+  
+   for(i=0; i <= rojo; i++){
+    digitalWrite(rojoPIN, HIGH);
+   delay(dt);
+   digitalWrite(rojoPIN, LOW);
+   delay(dt);
+  }
+
+
+
+
+
+}
+
+
+
+
+ 
